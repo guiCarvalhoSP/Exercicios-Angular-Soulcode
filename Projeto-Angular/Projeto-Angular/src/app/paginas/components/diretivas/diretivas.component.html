@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <h1 style="text-align: center;">Diretivas</h1>
+
+    <div id="conteudo">
+        <p>
+           As diretivas são marcadores de elementos DOM, elas são usadas para que o Angular anexe um determinado comportamento para aquele elemento DOM.
+        </p>
+        <br>
+
+        <p>Os principais tipos de diretivassão o ngStyle, ngClass, ngIf, ngSwitch e ngFor. Para usá-las, basta colocar dentro das declarações do elemento a sua sintaxe e os demais dados que cada uma necessita. Veja a seguir como usar elas:</p>
+
+        <h6>ngStyle</h6>
+        <p>O ngStyle serve para alterar em tempo real os valores css de um elemento DOM. sua sintaxe é <strong> [ngStyle]= "{{'{'}} {{'}'}}" </strong>.</p>
+        <br>
+
+        <h6>ngClass</h6>
+        <p>Está diretiva tem como função atribuir ou retirar uma classe de algum elemento DOM. <strong> [ngClass]= "{{'{'}} {{'}'}}" </strong>.</p>
+        <br>
+
+        <h6>ngIf</h6>
+        <p>Tem funcionalidade semelhante ao If de outras linguagens. Sua função é adicionar ou não um comportamento ao elemento DOM caso uma expressão booleana seja verdadeira ou falsa. <strong> *ngIf= "expressaoBooleana" </strong>.</p>
+        <br>
+
+        <h6>ngSwitch</h6>
+        <p>Comportamento semelhante ao ngIf.  Sua função é adicionar ou não um comportamento ao elemento DOM caso uma expressão booleana seja verdadeira ou falsa, sendo a sua principal diferença do ngIf o fato de ter um ngSwitchCase e um NgSwitchDefault. o NgSwitch recebe o valor que será testando, os ngSwitchCase farão uma verificação da expressão para saber se ela é verdadeira ou não (caso seja, executará a modificação no DOM), enquanto o NgSwitchDefault fará alguma função caso nenhum dos Cases retorne verdadeiro. A sintaxe de cada uma das 3 é: <strong> [ngSwitch]= 'atributo' </strong>, <strong> *ngSwitchCase= "expressaoBooleana"</strong>, <strong> *ngSwitchCase= "valorAtribuido" </strong>.</p>
+        <br>
+
+        <h6>ngFor</h6>
+        <p> O ngFor tem como função criar um loop para arrays que serão mostrados na tela. Sua sintaxe é: <strong> *ngFor= "let  value  of  values" </strong>.</p>
+        <br>
+
+        <p style="text-align: center;"><a href="https://angular.io/guide/built-in-directives" target="_blank">documentação oficial.</a></p>
+
+        <br>
+
+        <p>Você também pode construir suas próprias diretivas, com funcionalidades e comportamentos próprios criados especificamente para sua aplicação. Para saber mais como conseguir construir suas próprias diretivas, veja a <a href="https://angular.io/guide/attribute-directives" target="_blank">documentação oficial</a></p>
+    
+    </div>
+
+
+</div>

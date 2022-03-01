@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vh;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+main{
+    margin-left: 13.5%;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(224, 224, 224);
+    text-align: justify;
+}
+
+
+@media (min-width: 700px) { 
+    .barraLateral{
+        width:13%;
+        height: 100%;
+        margin-right: 13%;
+        border-right: 1px solid rgb(82, 82, 82);
+        position: fixed;
+        background-color: rgb(56, 56, 56);
+        font-family:'Roboto', sans-serif;
+        font-size: 1.7vw;
+        
+    
+    }
+
+    #logo{
+        width: 1.5%;
+        margin-left: 12px;
+        min-width: 60px;
+    }
+ }
+
+ @media(max-width: 700px){
+     .barraLateral{
+         display: none;
+     }
+
+     #logo{
+        width: 1.5%;
+        margin-left: 8px;
+        min-width: 40px;
+    }
+
+    main{
+        margin-left: 10px;
+    }
+ } 
+
+
+
+.menuLateral{
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+}
+
+.menuLateral:hover{
+    color: rgb(255, 255, 255);
+    border-top: solid 1px rgb(82, 82, 82);
+    border-bottom: solid 1px rgb(82, 82, 82);
+
+}
+
+
+.bg-blue{
+    background-color: #0352a3;
+}

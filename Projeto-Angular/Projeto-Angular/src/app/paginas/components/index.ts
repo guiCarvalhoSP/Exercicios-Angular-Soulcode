@@ -1,0 +1,7 @@
+export * from './home'
+export * from './instalacoes'
+export * from './componentes'
+export * from './modulos'
+export * from './databinding'
+export * from './diretivas'
+export * from './servicos'

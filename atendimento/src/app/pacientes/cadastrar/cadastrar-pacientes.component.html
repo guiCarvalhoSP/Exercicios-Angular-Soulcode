@@ -1,0 +1,33 @@
+<h1>Cadastrar paciente</h1>
+
+<div class="card">
+  <form #formPaciente="ngForm">
+    <div class="form-group">
+      <label for="nome">Nome do paciente:</label>
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]= "paciente.nome" #nome="ngModel" required> 
+      <div class="alert alert-danger" *ngIf="nome.errors && (nome.dirty || nome.touched)">
+        <div [hidden] = "!nome.errors.required"> 
+          Digite o nome do paciente.
+        </div>
+      </div>
+    </div>
+
+      <div class="form-group">
+        <label for="prioridade">Prioridade:</label>
+        <select name="prioridade" id="prioridade" class="form-control col-2" id="prioridade" name="prioridade" [(ngModel)]= "paciente.prioridade" #prioridade="ngModel" required>
+            <option value="Baixo">Baixo</option>
+            <option value="Moderado">Moderado</option>
+            <option value="Alto">Alto</option>
+            <option value="Urgente">Urgente</option>
+        </select>
+      </div>
+
+
+    <div class="form-group text-center">
+      <input type="submit" class="btn btn-success" (click) = 'cadastrar()' value="Cadastrar" [disabled]="!formPaciente.form.valid">
+      <a class="btn btn-secondary ml-2" [routerLink]="['/pacientes']">
+        <span class="fas fa-undo" aria-hidden="true" ></span> Voltar
+      </a>
+    </div>
+  </form>
+</div>

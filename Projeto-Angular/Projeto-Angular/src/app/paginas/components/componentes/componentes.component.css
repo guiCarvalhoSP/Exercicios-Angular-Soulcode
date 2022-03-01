@@ -1,0 +1,16 @@
+.codigos{
+    color: rgb(64, 236, 12);
+}
+
+#conteudo {
+    text-align: justify;
+}
+
+.imagens-exemplo{
+    width: 70%;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+}

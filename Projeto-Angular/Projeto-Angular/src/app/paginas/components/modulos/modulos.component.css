@@ -1,0 +1,22 @@
+.codigos{
+    color: rgb(64, 236, 12);
+}
+
+#conteudo {
+    text-align: justify;
+}
+
+.imagens-exemplo{
+    width: 55%;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 700px){
+    .imagens-exemplo{
+        width: 100%;
+    }
+}

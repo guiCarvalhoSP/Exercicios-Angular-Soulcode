@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <h1 style="text-align: center;">Data-Bindings</h1>
+
+    <div id="conteudo">
+        <p>
+            Ele nos permite definir a comunicação entre o componente e a visualização. Veja abaixo os tipos de Data Binding
+        </p>
+        <br>
+
+        <p><strong>String Interpolation:</strong>  O String Interpolation é do tipo one way data binding,  ou  seja,  o  dado  é  apenas  apresentado  na  tela  para  o usuário,     sem     alteração     do     valor     internamente.     String Interpolation é utilizado para interpolar valores das propriedades do  componente  dentro  do   template  HTML.  Para fazer  essa interpolação,  use chavesduplas  {{'({{    }})'}},  e  dentro  dos  colchetes duplos,  coloque  o  nome  do  atributo  do  componente  ou  alguma expressão JavaScript.</p>
+        <br>
+
+        <p><strong>Property  Binding:</strong> Também  sendo  um  one  way  data  binding,  o property  Binding  serve,  principalmente,  para  atrelar  valores  de atributos docomponente aos atributos de um elemento HTML ou algum  outro  componente.  Para  usar  o  property  binding,  dentro do   elemento   que   você   deseja   usá-lo,   coloque   o   nome   da propriedade entre colchetes, por exemplo {{'([propriedade]=”atributoDoComponente”)'}}. Assim, a propriedade terá o valor do atributo do seu componente.</p>
+        <br>
+
+        <p><strong>Event  Binding: </strong> O  Event  Binding  funciona  para  ouvir  eventos nativos   do   HTML   ou   eventos   que   podem   ser   criados   pelo programador,  executando  algum  método  do  componente.  Para usar o event binding é necessário que, dentro do elemento HTML ou componente, coloque entre parênteses o nome da função e , entre  aspas,  coloque  a  chamada  da  função  que  deseja  executar {{'((nomeDoEvento)=”metodoDoComponente()”)'}}.</p>
+        <br>
+
+        <p><strong>Two  Way  Data  Binding:</strong> O  Two  Way  Data  Binding  é  um  tipo especial   de   binding,   onde   além do   valor   do   atributo   ser apresentado  na  tela  do  usuário,  caso  o  valor  seja  editado  em algum  campo  de  input,  o  valor  será  automaticamente  alterado internamente no componente. Essa abordagem é muito utilizada para aumentar a interação do usuário, atualizar dados em tempo real, entre outras coisas.</p>
+        <br>
+        <p style="text-align: center;"><a href="https://angular.io/guide/binding-syntax" target="_blank">documentação oficial.</a></p>
+
+    </div>
+
+
+</div>

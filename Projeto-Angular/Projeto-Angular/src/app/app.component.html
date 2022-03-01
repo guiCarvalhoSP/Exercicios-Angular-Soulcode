@@ -1,0 +1,64 @@
+<header class="navbar navbar-expand-lg bg-blue navbar-dark">
+  <div>
+    <a [routerLink]="['/home']">
+      <img src="/assets/angular-transparente.png" id="logo" alt="Logo">
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item mr-4">
+        <a class="nav-link" [routerLink]="['/home']">Home</a>
+      </li>
+      <li class="nav-item dropdown mr-4">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Recursos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['/install']">Instalações</a>
+          <a class="dropdown-item" [routerLink]="['/modulos']">Modulos</a>
+          <a class="dropdown-item" [routerLink]="['/componentes']">Componentes</a>
+          <a class="dropdown-item" [routerLink]="['/servicos']">Serviços</a>
+          <a class="dropdown-item" [routerLink]="['/databinding']">Data-Binding</a>
+          <a class="dropdown-item" [routerLink]="['/diretivas']">Diretivas</a>
+
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://angular.io/" target="_blank">Documentação Oficial</a>
+        </div>
+      </li>
+
+
+    </ul>
+  </div>
+</header>
+
+<ul class="nav flex-column barraLateral navbar-dark">
+  <li class="nav-item">
+    <a class="menuLateral nav-link" [routerLink]="['/install']">Instalações</a>
+  </li>
+  <li class="nav-item">
+    <a class="menuLateral nav-link" [routerLink]="['/modulos']">Modulos</a>
+  </li>
+  <li class="nav-item">
+    <a class="menuLateral nav-link" [routerLink]="['/componentes']">Componentes</a>
+  </li>
+  <li class="nav-item">
+    <a class="menuLateral nav-link" [routerLink]="['/servicos']">Serviços</a>
+  </li>
+  <li class="nav-item">
+    <a class="menuLateral nav-link" [routerLink]="['/databinding']">Data-Binding</a>
+  </li>
+  <li class="nav-item">
+    <a class="menuLateral nav-link" [routerLink]="['/diretivas']">Diretivas</a>
+  </li>
+
+</ul>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
